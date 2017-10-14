@@ -1,0 +1,9 @@
+sublime text3 添加右键命令
+
+1. cmd -> regedit -> HKEY_CLASSSES_ROOT -> *  -> Shell -> 
+	新建项Sublime Text 3 -> 
+	在右边窗口新建字符串值,名称：Icon；值：D:\Program\Sublime Text 3\sublime_text.exe,0 （不要忘了 ,0 这个一定要加！Icon的value是你自己的安装路径，安装路径的查找可以通过右键，属性，目标获取）->
+
+	Sublime Text 3 下面再次新建项：Command（必须这个名称）.修改右侧窗口的默认值，修改为：D:\Program\Sublime Text 3\sublime_text.exe %1(不要忘了 空格% 这个一定要加！你自己的安装路径)
+
+不用重启。直接找个文件右单击看看
